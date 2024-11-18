@@ -1,6 +1,7 @@
 let app = new Vue({
     el: '#app',
     data:{
-        name:'noyon'
+        name:'noyon',
+        age: '27'
     }
 })
