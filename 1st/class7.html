@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VUEJS</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<style>
+    .canvas{
+        height: 240px;
+        width: 240px;
+        margin-top: 20px;
+        background-color: orange;
+    }
+</style>
+</head>
+<body>
+    <h1>two way data binding</h1>
+    <div id="app">
+        my name is {{ name }}
+        <br><br>
+        <input type="text" v-model="name" >
+    </div>
+    
+    <script>
+        let app = new Vue({
+            el:'#app',
+            data:{
+                name: ''
+            },
+           methods:{
+
+           },
+        })
+    </script>
+</body>
+</html>
