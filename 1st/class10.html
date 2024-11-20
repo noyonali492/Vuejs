@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VUEJS</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+</head>
+<body>
+    <h1>looping</h1>
+    <div id="app">
+        <ul>
+            <ol>
+                <li v-for="name in names">{{name}}</li>
+            </ol>
+        </ul>
+
+        <ul>
+            <ol>
+                <li v-for="fruit in fruits">
+                    Name: {{fruit.name}},
+                    color: {{fruit.color}},
+                    Weight: {{fruit.weight}}
+                </li>
+            </ol>
+        </ul>
+    </div>
+    
+    <script>
+        let app = new Vue({
+            el:'#app',
+            data:{
+                names: ['noyon','alim','tamim','naim','champa','helal'],
+                fruits:[
+                    { name:'mango' , color:'yellow' , weight:'10'},
+                    { name:'Orange' , color:'Orange' , weight:'5'},
+                    { name:'Banana' , color:'yellow' , weight:'23'},
+                    { name:'Guava' , color:'yellow' , weight:'8'},
+                    { name:'ata' , color:'beguny' , weight:'10'}
+                ]
+            },
+           methods:{
+           
+           },
+        })
+    </script>
+</body>
+</html>
